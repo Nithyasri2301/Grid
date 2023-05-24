@@ -1,0 +1,113 @@
+<!DOCTYPE html> box-shadow: 10px 10px 100px black;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .para{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            gap:40px 40px;
+            /* row-gap:40px; */
+            background-color: rgb(175, 177, 28);
+            /* padding: 50px; 
+            margin: 100px; */
+        }
+        .item{
+            /* grid-column-start:4 ;
+            grid-column-end:4 ;
+             */
+        }
+        p{
+            border:3px solid black;
+            text-align: center;
+           
+        }
+       .para p:first-child{
+            color: rgb(207, 14, 14);
+            background-color: aqua;
+            font-size: 100px;
+        }
+        .para p:last-child{
+            color: blue;
+            background-color: cornflowerblue;
+            font-size: 100px;
+        }
+        .para p:nth-child(2){
+            color: rgb(28, 51, 48);
+            background-color: rgb(107, 237, 100);
+            font-size: 100px;
+        }
+        .para p:nth-child(3){
+            color: rgb(175, 14, 135);
+            background-color: rgb(22, 189, 205);
+            font-size: 100px;
+        }
+        .para p:nth-child(4){
+            color: rgb(0, 119, 255);
+            background-color: rgb(219, 45, 219);
+            font-size: 100px;
+        }
+        .para p:nth-child(5){
+            color: rgb(136, 37, 37);
+            background-color: rgb(110, 22, 205);
+            font-size: 100px;
+        }
+        .para p:nth-child(6){
+            color: rgb(43, 175, 14);
+            background-color: rgb(168, 205, 22);
+            font-size: 100px;
+        }
+        .para p:nth-child(7){
+            color: rgb(14, 30, 175);
+            background-color: rgb(205, 22, 49);
+            font-size: 100px;
+        }
+        .para p:nth-child(8){
+            color: rgb(40, 26, 36);
+            background-color: rgb(205, 89, 22);
+            font-size: 100px;
+        }
+        .para p:nth-child(9){
+            color: rgb(185, 115, 45);
+            background-color: rgb(48, 157, 79);
+            font-size: 100px;
+        }
+        /* ------------------Media Screen------------------------ */
+         @media screen and (min-width:200px) and (max-width:600px){
+            .para{
+            display: grid;
+            grid-template-columns: auto;
+         }}
+
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="para">
+        <p class="item">1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+
+        
+    </div>
+    
+</body>
+</html>
